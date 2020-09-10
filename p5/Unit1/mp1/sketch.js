@@ -184,3 +184,4 @@ function draw() {
 
   fill("white")
   text(mouseX + ", " + mouseY, 20, 20);
+}
