@@ -4,7 +4,7 @@ let x = 0 ;
 let velocity = 10 ;
 
  function setup() {
-   creatCanvas(800, 800);
+   createCanvas(800, 800);
    ellipseMode(CENTER);
    rectMode(CENTER);
  }
@@ -13,13 +13,13 @@ let velocity = 10 ;
 
    background(100);
    fill('yellow');
-   rect(width / 2, height / 2, 200, 200);
+   rect(width / 2, height / 2, 200, 700);
 
 // car code
 fill('blue') ;
-rect(0, 750, 75, 70) ;
+rect(x, 750, 75, 70) ;
 x = x + velocity;
-if (x > width) { 
+if (x > width) {
   x = 0 ;
 }
 
@@ -48,9 +48,9 @@ velocity = 10 ;
      case 2: // yellow
        text("2", 100, 100);
        fill('grey');
-       ellipse(width / 2, height / 2, 150, 150);
-       fill('yellow')
-       ellipse(width / 2, height / 2 - 170, 150, 150);
+       ellipse(width / 2, height / 2- 170, 150, 150);
+       fill('yellow');
+       ellipse(width / 2, height / 2 , 150, 150);
        fill('grey');
        ellipse(width / 2, height / 2 + 170, 150, 150);
 velocity = 5;
