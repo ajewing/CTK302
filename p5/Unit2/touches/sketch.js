@@ -17,11 +17,11 @@ function draw() {
 
   switch(numberOfTouches) {
     case 0:
-      text("no one is touching the screen", 5, 22) ;
+      text("Have a touch", 5, 22) ;
       break ;
 
       case 1:
-       text("it's kind of lonely here", 5, 22) ;
+       text("it's kind of dark in here", 5, 22) ;
       // put a picture here
       image(img1, width/2, height/2);
       break ;
