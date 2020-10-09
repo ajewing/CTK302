@@ -13,7 +13,7 @@ img3 = loadImage("assets/3.jpg");
 function draw() {
   clear();
   numberOfTouches = touches.length;
-numberOfTouches = 2 ;
+//numberOfTouches = 2 ;
   text(numberOfTouches + ' touches', 5, 10);
 
   switch(numberOfTouches) {
