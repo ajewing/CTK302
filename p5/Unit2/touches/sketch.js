@@ -2,7 +2,7 @@ let numberOfTouches ;
 let img1, img2, img3 ;
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(windowWidth, windowHeight);
   imageMode(CENTER);
 img1 = loadImage("assets/1.jpg");
 img2 = loadImage("assets/2.jpg");
@@ -13,6 +13,7 @@ img3 = loadImage("assets/3.jpg");
 function draw() {
   clear();
   numberOfTouches = touches.length;
+numberOfTouches = 2 ;
   text(numberOfTouches + ' touches', 5, 10);
 
   switch(numberOfTouches) {
