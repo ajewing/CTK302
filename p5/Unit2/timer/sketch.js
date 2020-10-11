@@ -1,8 +1,11 @@
 let timer = 0;
 let state = 0;
+let img1 ;
 
 function setup() {
-  createCanvas(500, 500);
+createCanvas(800, 800);
+imageMode(CENTER);
+img1 = loadImage("assets/eye.jpg");
 }
 
 function draw() {
@@ -12,7 +15,7 @@ function draw() {
 
     case 0:
       background('red');
-      text("case 0", 250, 250);
+      text("Hello World", 250, 250);
       // increment the timer variable
       timer = timer + 1;
       //if the timer var is greater than 200
@@ -24,8 +27,9 @@ function draw() {
       break;
 
     case 1:
-      background('blue');
-      text("case 1", 250, 250);
+background('red') ;
+      image(img1, width/2, height/2, 300, 300);
+      text("Winning Big", 250, 250);
       break;
 
   }
