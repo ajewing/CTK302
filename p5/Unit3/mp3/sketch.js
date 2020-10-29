@@ -71,7 +71,7 @@ function setup() {
   function reset() {
     timer = 0;
 
-    for (var = 0; i < 20; i++) {
+    for (var i = 0; i < 20; i++) {
       cars.push(new Car());
     }
   }
@@ -147,5 +147,4 @@ function setup() {
     }
 
   }
-}
 }
