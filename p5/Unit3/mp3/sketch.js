@@ -5,6 +5,8 @@ var timer = 0;
 var song1;
 var CaptainLevii;
 var Goomba;
+var forest;
+var sunshine;
 
 function preload() {
   song1 = loadSound("assets/attackontitan.mp4");
@@ -25,13 +27,15 @@ function setup() {
   imageMode(CENTER);
   CaptainLevii = loadImage('Assets/CaptainLevii.png');
   Goomba = loadImage('Assets/Goomba.png');
+  forest = loadImage('Assets/forest.jpeg');
+  sunshine = loadImage('Assets/sunshine.jpg');
 }
 
 
 
 
 function draw() {
-  background('red');
+  background('forest');
   switch (myState) {
 
     case -1:
@@ -42,11 +46,13 @@ function draw() {
     case 0: // menu
       background('green');
       fill('white');
+    image(sunshine, width / 2, height / 2, 800, 800);
       textSize(24);
       text("Welcome to my game", width / 2, height / 2)
       break;
 
     case 1: // game state
+      background(forest) ;
       game();
       timer++;
       if (timer > 20 * 60) {
@@ -55,13 +61,14 @@ function draw() {
       break;
 
     case 2: // win state
-      background('blue')
+      background('forest')
       text("Yay you won", width / 2, height / 2)
       break;
 
 
     case 3: // lose
       background('red')
+        image(forest, width / 2, height / 2, 800, 800);
       text("You Lost!", width / 2, height / 2)
       break;
 
