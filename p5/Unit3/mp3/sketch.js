@@ -52,7 +52,6 @@ function draw() {
       break;
 
     case 1: // game state
-      background(forest) ;
       game();
       timer++;
       if (timer > 20 * 60) {
@@ -61,7 +60,7 @@ function draw() {
       break;
 
     case 2: // win state
-      background('forest')
+      image(forest, width / 2, height / 2, 800, 800);
       text("Yay you won", width / 2, height / 2)
       break;
 
@@ -87,6 +86,7 @@ function reset() {
 function game() {
 
   background('lightblue');
+  image(forest, width / 2, height / 2, 800, 800);
   text("Time: " + timer, 100, 100);
   for (var i = 0; i < cars.length; i++) {
     cars[i].display();
