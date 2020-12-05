@@ -22,7 +22,7 @@ function setup() {
 
 function draw() {
 
-  background('forest'); // light blue
+  background('forest'); 
 
 
   // the map command !!!!
