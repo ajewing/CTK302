@@ -4,6 +4,7 @@ Make sure you turn on orientation lock on your iPhone or Android device. */
 let alpha = 0, beta = 0 , gamma = 0; // gyroscope variables
 let x = 0.0, y = 0.0, z = 0.0 ; // accelerometer variables
 let bunnyImage;
+let forestImage;
 let xPosition = 0;
 let yPosition = 0;
 
@@ -12,7 +13,7 @@ let yPosition = 0;
 function setup() {
 
   createCanvas(windowWidth, windowHeight);
-
+  forest = loadImage('assets/forest.jpeg');
   bunnyImage = loadImage("assets/capt.png");
   imageMode(CENTER);
   rectMode(CENTER);
@@ -22,6 +23,7 @@ function setup() {
 function draw() {
 
   background('#c6f5ff'); // light blue
+	image(forest, width/2, height/2, 600, 600);
 
   // the map command !!!!
   // takes your variable and maps it from range 1 to range 2
