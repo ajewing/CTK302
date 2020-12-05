@@ -13,7 +13,7 @@ let yPosition = 0;
 function setup() {
 
   createCanvas(windowWidth, windowHeight);
-  forest = loadImage('assets/forest.jpeg');
+  forestImage = loadImage('assets/forest.jpeg');
   bunnyImage = loadImage("assets/capt.png");
   imageMode(CENTER);
   rectMode(CENTER);
