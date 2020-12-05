@@ -22,8 +22,8 @@ function setup() {
 
 function draw() {
 
-  background('#c6f5ff'); // light blue
-	image(forest, width/2, height/2, 600, 600);
+  background('forest'); // light blue
+
 
   // the map command !!!!
   // takes your variable and maps it from range 1 to range 2
