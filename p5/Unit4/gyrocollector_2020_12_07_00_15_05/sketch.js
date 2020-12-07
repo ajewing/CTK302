@@ -143,13 +143,13 @@ function Car() {
 
   // methods
   this.display = function() {
-
+    
     // maybe use an image here instead!
     fill(this.r, this.g, this.b, this.a);
     ellipse(this.pos.x - 50, this.pos.y, 50, 50);
     ellipse(this.pos.x + 50, this.pos.y, 50, 50);
     rect(this.pos.x + 17, this.pos.y - 30, 80, 60) ;
-
+    
   }
 
   this.drive = function() {
