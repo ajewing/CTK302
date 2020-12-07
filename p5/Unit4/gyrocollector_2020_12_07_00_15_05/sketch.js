@@ -35,6 +35,7 @@ function setup() {
   imageMode(CENTER);
   rectMode(CENTER);
   noStroke();
+  Goomba = loadImage('Assets/Goomba.png');
 }
 
 function draw() {
