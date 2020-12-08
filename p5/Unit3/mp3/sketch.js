@@ -9,7 +9,7 @@ var forest;
 var sunshine;
 
 function preload() {
-  song1 = loadSound("assets/attackontitan.mp4");
+  song1 = loadSound("Assets/attackontitan.mp4");
 
 }
 
